@@ -12,3 +12,6 @@ def display_intro():
     print("*" * len(title))
 
 display_intro()
+
+name = input("Enter Yout Name To Start The Game: ")
+print("Hello " + name + "! " + "Good Luck" + "!")
