@@ -40,6 +40,7 @@ def start_game():
         return None
     else: 
         print("That's not a function")
+        
 
 
 start_game()
@@ -47,8 +48,7 @@ start_game()
 
 def random_question():
     """
-    a dictionary with operators and function to randomly
-     select the number on the right and left 
+    a dictionary with operators
     """
     operators = {
         "+": operator.add,
@@ -66,11 +66,47 @@ def addition():
     choice = input("> ")
     if int(choice) == num1 + num2:
         print("Correct!")
+        
 
     else: 
         print("Incorrect!")
+
+
 addition()
 
+
+def multiplication():
+    
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    print(f'What is {num1} * {num2}?')
+    
+    choice = input("> ")
+    if int(choice) == num1 * num2:
+        print("Correct!")
+
+    else: 
+        print("Incorrect!")
+
+
+multiplication()
+
+
+def subtraction():
+    
+    num1 = random.randint(1, 25)
+    num2 = random.randint(1, 25)
+    print(f'What is {num1} - {num2}?')
+    
+    choice = input("> ")
+    if int(choice) == num1 - num2:
+        print("Correct!")
+
+    else: 
+        print("Incorrect!")
+
+
+subtraction()
 
 
 
