@@ -15,19 +15,31 @@ def display_intro():
 display_intro()
 
 name = input("Enter Yout Name To Start The Game: ")
-print("Hello " + name + "! " + "Good Luck" + "!")
+print("Hello " + name + "! ")
+
 
 def start_game():
     """
     This function creates the game choices
     """
     print("Wgich would you like to play?")
-    print("A - Addition")
-    print("B - Multiplication")
-    print("C - Subtraction")
+    print("A - addition")
+    print("B - multiplication")
+    print("C - subtraction")
     print("D - Exit Game")
+    
+    choice = input("> ")
 
-
+    if choice == "A":
+        addition()
+    elif choice == "B":
+        multiplication()
+    elif choice == "c":
+        subtraction()
+    elif choice == "D":
+        return None
+    else: 
+        print("That's not a function")
 start_game()
 
 
@@ -40,7 +52,6 @@ def random_question():
         "+": operator.add,
         "*": operator.mul,
         "-": operator.sub,
-        "%": operator.mod
     }
 
 # random numbers between 1 - 25 
@@ -61,8 +72,4 @@ def user_answer():
     return guess == answer
 
 
-def start_game():
-    """
-    A function to start the game and loop through questions 
-    and increment score 
-    """
+
