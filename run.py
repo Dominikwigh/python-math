@@ -17,6 +17,19 @@ display_intro()
 name = input("Enter Yout Name To Start The Game: ")
 print("Hello " + name + "! " + "Good Luck" + "!")
 
+def start_game():
+    """
+    This function creates the game choices
+    """
+    print("Wgich would you like to play?")
+    print("A - Addition")
+    print("B - Multiplication")
+    print("C - Subtraction")
+    print("D - Exit Game")
+
+
+start_game()
+
 
 def random_question():
     """
@@ -46,3 +59,10 @@ def user_answer():
     answer = random_question()
     guess = float(input())
     return guess == answer
+
+
+def start_game():
+    """
+    A function to start the game and loop through questions 
+    and increment score 
+    """
