@@ -56,21 +56,21 @@ def random_question():
         "-": operator.sub,
     }
 
-# random numbers between 1 - 25 
+
+def addition():
+    
     num1 = random.randint(1, 25)
     num2 = random.randint(1, 25)
-    answer = operators.get(operators)(num1, num2)
-    print(f'What is {num1} {operators} {num2}?')
-    return answer
+    print(f'What is {num1} + {num2}?')
+    
+    choice = input("> ")
+    if int(choice) == num1 + num2:
+        print("Correct!")
 
+    else: 
+        print("Incorrect!")
+addition()
 
-def user_answer():
-    """
-    A function to get the users input 
-    """
-    answer = random_question()
-    guess = float(input())
-    return guess == answer
 
 
 
