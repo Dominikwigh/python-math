@@ -22,7 +22,7 @@ def start_game():
     """
     This function creates the game choices
     """
-    print("Wgich would you like to play?")
+    print("Which would you like to play?")
     print("A - addition")
     print("B - multiplication")
     print("C - subtraction")
@@ -31,15 +31,17 @@ def start_game():
     choice = input("> ")
 
     if choice == "A":
-        addition()
+        operator.add
     elif choice == "B":
-        multiplication()
-    elif choice == "c":
-        subtraction()
+        operator.mul
+    elif choice == "C":
+        operator.sub
     elif choice == "D":
         return None
     else: 
         print("That's not a function")
+
+
 start_game()
 
 
@@ -57,9 +59,8 @@ def random_question():
 # random numbers between 1 - 25 
     num1 = random.randint(1, 25)
     num2 = random.randint(1, 25)
-    operation = random.choice(list(operators.keys()))
-    answer = operators.get(operation)(num1, num2)
-    print(f'What is {num1} {operation} {num2}?')
+    answer = operators.get(operators)(num1, num2)
+    print(f'What is {num1} {operators} {num2}?')
     return answer
 
 
