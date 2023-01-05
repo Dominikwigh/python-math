@@ -1,5 +1,5 @@
-import random 
-import operator 
+import random
+import operator
 
 
 def display_intro():
@@ -27,20 +27,20 @@ def start_game():
     print("B - multiplication")
     print("C - subtraction")
     print("D - Exit Game")
-    
+
     choice = input("> ")
 
     if choice == "A":
-        operator.add
+        addition()
     elif choice == "B":
-        operator.mul
+        multiplication()
     elif choice == "C":
-        operator.sub
+        subtraction()
     elif choice == "D":
         return None
-    else: 
-        print("That's not a function")
-        
+    else:
+        print("That's not an option")
+        start_game()
 
 
 start_game()
@@ -51,62 +51,72 @@ def random_question():
     a dictionary with operators
     """
     operators = {
-        "+": operator.add,
-        "*": operator.mul,
-        "-": operator.sub,
+        "A": operator.add,
+        "B": operator.mul,
+        "C": operator.sub,
     }
 
 
 def addition():
-    
+
     num1 = random.randint(1, 25)
     num2 = random.randint(1, 25)
     print(f'What is {num1} + {num2}?')
-    
+
     choice = input("> ")
     if int(choice) == num1 + num2:
         print("Correct!")
-        
 
-    else: 
+    else:
         print("Incorrect!")
+        start_game()
 
 
 addition()
 
 
 def multiplication():
-    
+
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
-    print(f'What is {num1} * {num2}?')
-    
+    print(f'What is {num1} x {num2}?')
+
     choice = input("> ")
-    if int(choice) == num1 * num2:
+    if int(choice) == num1*num2:
         print("Correct!")
 
-    else: 
+    else:
         print("Incorrect!")
+        start_game()
 
 
 multiplication()
 
 
 def subtraction():
-    
+
     num1 = random.randint(1, 25)
     num2 = random.randint(1, 25)
     print(f'What is {num1} - {num2}?')
-    
+
     choice = input("> ")
     if int(choice) == num1 - num2:
         print("Correct!")
 
-    else: 
+    else:
         print("Incorrect!")
+        start_game()
 
 
 subtraction()
 
+###
+def game():
+    score = 0
+    for i in range(5):
+        if True:
+            score += 1
+    print(f'Your score is{score}')
 
 
+game()
