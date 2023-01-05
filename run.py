@@ -39,3 +39,10 @@ def random_question():
     return answer
 
 
+def user_answer():
+    """
+    A function to get the users input 
+    """
+    answer = random_question()
+    guess = float(input())
+    return guess == answer
