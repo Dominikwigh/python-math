@@ -4,18 +4,17 @@ import operator
 
 def display_intro():
     """
-    display a title for the the game
+    displaying a title to the the game
     """
     title = "** Welcome To Math Practice! **"
     print("*" * len(title))
     print(title)
     print("*" * len(title))
+    name = input("Enter Your Name To Start The Game: ")
+    print("Hello " + name + "! ")
 
 
 display_intro()
-
-name = input("Enter Yout Name To Start The Game: ")
-print("Hello " + name + "! ")
 
 
 def start_game():
@@ -37,23 +36,22 @@ def start_game():
     elif choice == "C":
         subtraction()
     elif choice == "D":
-        return None
+        return start_game()
     else:
         print("That's not an option")
         start_game()
 
 
-start_game()
 
 
-def random_question():
+def question():
     """
     a dictionary with operators
     """
     operators = {
-        "A": operator.add,
-        "B": operator.mul,
-        "C": operator.sub,
+        "+": operator.add,
+        "*": operator.mul,
+        "-": operator.sub,
     }
 
 
@@ -72,9 +70,6 @@ def addition():
         start_game()
 
 
-addition()
-
-
 def multiplication():
 
     num1 = random.randint(1, 10)
@@ -84,13 +79,11 @@ def multiplication():
     choice = input("> ")
     if int(choice) == num1*num2:
         print("Correct!")
+        start_game()
 
     else:
         print("Incorrect!")
         start_game()
-
-
-multiplication()
 
 
 def subtraction():
@@ -104,19 +97,15 @@ def subtraction():
         print("Correct!")
 
     else:
-        print("Incorrect!")
-        start_game()
+        print("Incorrect!") 
 
 
-subtraction()
-
-###
-def game():
+def display_score():
     score = 0
-    for i in range(5):
+    for i in range(3):
         if True:
             score += 1
-    print(f'Your score is{score}')
+            print(f'Your score is {score}')
 
 
-game()
+start_game()
