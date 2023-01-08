@@ -22,37 +22,25 @@ def start_game():
     This function creates the game choices
     """
     print("Which would you like to play?")
-    print("A - addition")
-    print("B - multiplication")
-    print("C - subtraction")
-    print("D - Exit Game")
+    list = ["1 - Addition", "2 - Multiplication", "3 - Subtraction", "4 - Exit"]
+    print(list[0])
+    print(list[1])
+    print(list[2])
+    print(list[3])
 
     choice = input("> ")
 
-    if choice == "A":
+    if choice == "1":
         addition()
-    elif choice == "B":
+    elif choice == "2":
         multiplication()
-    elif choice == "C":
+    elif choice == "3":
         subtraction()
-    elif choice == "D":
-        return start_game()
+    elif choice == "4":
+        return display_intro()
     else:
-        print("That's not an option")
+        print("Invalid menu option!")
         start_game()
-
-
-
-
-def question():
-    """
-    a dictionary with operators
-    """
-    operators = {
-        "+": operator.add,
-        "*": operator.mul,
-        "-": operator.sub,
-    }
 
 
 def addition():
@@ -67,7 +55,6 @@ def addition():
 
     else:
         print("Incorrect!")
-        start_game()
 
 
 def multiplication():
@@ -79,11 +66,9 @@ def multiplication():
     choice = input("> ")
     if int(choice) == num1*num2:
         print("Correct!")
-        start_game()
 
     else:
         print("Incorrect!")
-        start_game()
 
 
 def subtraction():
@@ -100,12 +85,11 @@ def subtraction():
         print("Incorrect!") 
 
 
-def display_score():
+def game():
     score = 0
-    for i in range(3):
+    for i in range(5):
         if True:
-            score += 1
-            print(f'Your score is {score}')
+            print(f'Your score Was {score} Out Of')
 
 
 start_game()
