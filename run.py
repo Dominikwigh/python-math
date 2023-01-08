@@ -1,5 +1,4 @@
 import random
-import operator
 from time import time
 
 
@@ -87,7 +86,7 @@ def multiplication():
 
 
 def subtraction():
-    """ 
+    """
     subtraction part of game with timer
     """
 
@@ -105,20 +104,6 @@ def subtraction():
     else:
         print("Incorrect!") 
         start_game()
-
-
-def display_result(total, score, user_choice):
-    if total > 0:
-        user_choice = score / total
-        print("You answerd", total, "questions with", score)
-
-
-def game(score):
-    option = start_game()
-    total = 0
-    score = 0
-    while option != 4:
-        total += 1
 
 
 start_game()
