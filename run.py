@@ -11,7 +11,7 @@ def display_intro():
     print(title)
     print("*" * len(title))
     name = input("Enter Your Name To Start The Game: ")
-    print("Hello " + name + "! ")
+    print("**** Hello " + name + "! ****")
 
 
 display_intro()
@@ -23,7 +23,7 @@ def start_game():
     """
     print("Which would you like to play?")
     list = ["1 - Addition", "2 - Multiplication", "3 - Subtraction", 
-    "4 - Exit"]
+    "4 - Exit game"]
     print(list[0])
     print(list[1])
     print(list[2])
@@ -38,7 +38,7 @@ def start_game():
     elif choice == "3":
         subtraction()
     elif choice == "4":
-        return display_intro()
+        return exit()
     try:
         print("Invalid menu option!")
         start_game()
@@ -104,6 +104,13 @@ def subtraction():
     else:
         print("Incorrect!") 
         start_game()
+
+
+def exit():
+    """
+    function to exit quiz
+    """
+    print("Exited Quiz!")
 
 
 start_game()
