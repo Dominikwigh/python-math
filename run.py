@@ -87,14 +87,19 @@ def multiplication():
 
 
 def subtraction():
+    """ 
+    subtraction part of game with timer
+    """
 
     num1 = random.randint(1, 25)
     num2 = random.randint(1, 25)
+    start_time = time()
     print(f'What is {num1} - {num2}?')
 
     user_choice = int(input("> "))
+    elapsed_time = time() - start_time
     if int(user_choice) == num1 - num2:
-        print("Correct!")
+        print(f'Correct, in {elapsed_time:.2f} seconds')
         start_game()
 
     else:
