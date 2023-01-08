@@ -1,5 +1,6 @@
 import random
 import operator
+from time import time
 
 
 def display_intro():
@@ -38,24 +39,31 @@ def start_game():
         subtraction()
     elif choice == "4":
         return display_intro()
-    else:
+    try:
         print("Invalid menu option!")
         start_game()
+    except ValueError:
+        print("That was not a number")
 
 
-def addition():
+def addition(): 
+    """
+    addition function with timer 
+    """
 
     num1 = random.randint(1, 25)
     num2 = random.randint(1, 25)
+    start_time = time()
     print(f'What is {num1} + {num2}?')
-
     user_choice = int(input("> "))
+    elapsed_time = time() - start_time
     if int(user_choice) == num1 + num2:
-        print("Correct!")
+        print(f'Correct, in {elapsed_time:.2f} seconds')
         start_game()
     else:
         print("Incorrect!")
         start_game()
+
 
 def multiplication():
 
