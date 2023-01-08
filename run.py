@@ -23,7 +23,8 @@ def start_game():
     This function creates the game choices
     """
     print("Which would you like to play?")
-    list = ["1 - Addition", "2 - Multiplication", "3 - Subtraction", "4 - Exit"]
+    list = ["1 - Addition", "2 - Multiplication", "3 - Subtraction", 
+    "4 - Exit"]
     print(list[0])
     print(list[1])
     print(list[2])
@@ -48,7 +49,7 @@ def start_game():
 
 def addition(): 
     """
-    addition function with timer 
+    addition part of game with timer
     """
 
     num1 = random.randint(1, 25)
@@ -66,14 +67,19 @@ def addition():
 
 
 def multiplication():
+    """
+    multiplication part of game with timer
+    """
 
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
+    start_time = time()
     print(f'What is {num1} x {num2}?')
 
     user_choice = int(input("> "))
+    elapsed_time = time() - start_time
     if int(user_choice) == num1*num2:
-        print("Correct!")
+        print(f'Correct, in {elapsed_time:.2f} seconds')
         start_game()
     else:
         print("Incorrect!")
