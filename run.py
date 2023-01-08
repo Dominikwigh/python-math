@@ -49,13 +49,13 @@ def addition():
     num2 = random.randint(1, 25)
     print(f'What is {num1} + {num2}?')
 
-    choice = input("> ")
-    if int(choice) == num1 + num2:
+    user_choice = int(input("> "))
+    if int(user_choice) == num1 + num2:
         print("Correct!")
-
+        start_game()
     else:
         print("Incorrect!")
-
+        start_game()
 
 def multiplication():
 
@@ -63,12 +63,13 @@ def multiplication():
     num2 = random.randint(1, 10)
     print(f'What is {num1} x {num2}?')
 
-    choice = input("> ")
-    if int(choice) == num1*num2:
+    user_choice = int(input("> "))
+    if int(user_choice) == num1*num2:
         print("Correct!")
-
+        start_game()
     else:
         print("Incorrect!")
+        start_game()
 
 
 def subtraction():
@@ -77,19 +78,28 @@ def subtraction():
     num2 = random.randint(1, 25)
     print(f'What is {num1} - {num2}?')
 
-    choice = input("> ")
-    if int(choice) == num1 - num2:
+    user_choice = int(input("> "))
+    if int(user_choice) == num1 - num2:
         print("Correct!")
+        start_game()
 
     else:
         print("Incorrect!") 
+        start_game()
 
 
-def game():
+def display_result(total, score, user_choice):
+    if total > 0:
+        user_choice = score / total
+        print("You answerd", total, "questions with", score)
+
+
+def game(score):
+    option = start_game()
+    total = 0
     score = 0
-    for i in range(5):
-        if True:
-            print(f'Your score Was {score} Out Of')
+    while option != 4:
+        total += 1
 
 
 start_game()
