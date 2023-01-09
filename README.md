@@ -7,6 +7,13 @@ When completing a challange the user gets a answer if correct/ incorrect when co
 
 image 
 --- 
+## Instructions on how to play 
+The maths game is a simple terminal game designed to test users knowledge. 
+There is four options to choose from to play. 
+At the start of the game you are presented by a title wit the text of "Welcome to math practice. 
+Below the title is a text of "Enter your name to start the game" for the user to enter their name and then start the game. 
+on the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how log it took them to answer the question, but only if they get it right. 
+Either if its corrcet or incorrect they are provided with playing again. 
 ## Features 
 ---
 ## Deployment 

@@ -38,15 +38,16 @@ def start_game():
     elif choice == "3":
         subtraction()
     elif choice == "4":
-        return exit()
+        exit_game()
     try:
         print("Invalid menu option!")
         start_game()
     except ValueError:
         print("That was not a number")
+        start_game()
 
 
-def addition(): 
+def addition():
     """
     addition part of game with timer
     """
@@ -55,9 +56,9 @@ def addition():
     num2 = random.randint(1, 25)
     start_time = time()
     print(f'What is {num1} + {num2}?')
-    user_choice = int(input("> "))
+    choice = int(input("> "))
     elapsed_time = time() - start_time
-    if int(user_choice) == num1 + num2:
+    if int(choice) == num1 + num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
         start_game()
     else:
@@ -75,9 +76,9 @@ def multiplication():
     start_time = time()
     print(f'What is {num1} x {num2}?')
 
-    user_choice = int(input("> "))
+    choice = int(input("> "))
     elapsed_time = time() - start_time
-    if int(user_choice) == num1*num2:
+    if int(choice) == num1*num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
         start_game()
     else:
@@ -95,9 +96,9 @@ def subtraction():
     start_time = time()
     print(f'What is {num1} - {num2}?')
 
-    user_choice = int(input("> "))
+    choice = int(input("> "))
     elapsed_time = time() - start_time
-    if int(user_choice) == num1 - num2:
+    if int(choice) == num1 - num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
         start_game()
 
@@ -106,11 +107,11 @@ def subtraction():
         start_game()
 
 
-def exit():
+def exit_game():
     """
-    function to exit quiz
+    function to exit game
     """
-    print("Exited Quiz!")
+    print("You just left the game!")
 
 
 start_game()
