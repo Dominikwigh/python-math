@@ -22,12 +22,11 @@ def start_game():
     This function creates the game choices
     """
     print("Which would you like to play?")
-    list = ["1 - Addition", "2 - Multiplication", "3 - Subtraction", 
-    "4 - Exit game"]
-    print(list[0])
-    print(list[1])
-    print(list[2])
-    print(list[3])
+    menu_list = ["1-Addition", "2-Multiplication", "3-Subtraction", "4-Exit"]
+    print(menu_list[0])
+    print(menu_list[1])
+    print(menu_list[2])
+    print(menu_list[3])
 
     choice = input("> ")
 
@@ -103,7 +102,7 @@ def subtraction():
         start_game()
 
     else:
-        print("Incorrect!") 
+        print("Incorrect!")
         start_game()
 
 

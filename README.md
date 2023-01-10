@@ -45,6 +45,22 @@ folder/image.png
 
 When the run program button is clicked at the top the game will restart. 
 
+## Testing ## 
+### Manual Testing ###
+I have manually tested the program by doing this.. 
+* Passed thorugh a PEP8 linter and confirmed that there are no problems. 
+* Tested answers by inputting incorrcet values(string instead of integer, numbers higher than 4).
+* Tested both on Gitpod and Heroku Terminal. 
+
+### Validator testing ### 
+folder/image.png
+
+### Bug Testing 
+
+### Unresolved bugs
+No unresolved bugs where detected. 
+
+
 ## Deployment ##
 ---
 The steps to deploy are as follows..
