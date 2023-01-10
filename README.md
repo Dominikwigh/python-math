@@ -38,10 +38,10 @@ folder/image.png
     * Addition, multiplication, subtraction or exit game. 
 
 * Game selected 
-    * This will, after choosing a game privde the user with a problem to solve, and if correct the user sees corrcet wit a time that it took the user to answer. 
+    * This will, after choosing a game privde the user with a problem to solve, and if correct the user sees corrcet with a time that it took the user to answer. 
     * If the aswer is incorrect it tells the user that. 
 * Problem complete 
-    * When eiter correct or incorrect the user the have the chance to play again by choosing a game again or exit the quiz. 
+    *  
 
 When the run program button is clicked at the top the game will restart. 
 
