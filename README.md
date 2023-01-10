@@ -14,6 +14,14 @@ At the start of the game you are presented by a title wit the text of "Welcome t
 Below the title is a text of "Enter your name to start the game" for the user to enter their name and then start the game. 
 on the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how log it took them to answer the question, but only if they get it right. 
 Either if its corrcet or incorrect they are provided with playing again. 
+--- 
+## Project Goals 
+This project was created for Code institutes full stack development course. 
+* Main goals 
+   * Create a terminal game using the Python language. 
+   * Make the game easy to play but still challenging.
+* User targets
+   * Users that want to test their knowledge.
 ## Features 
 ---
 ## Deployment 
