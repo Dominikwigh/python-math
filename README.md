@@ -74,3 +74,9 @@ The steps to deploy are as follows..
 * Click enable automatic deploy. 
 * The live version of the app can be found here.. 
 
+## Credits ## 
+All code taken from some sort of source i have credited properly in the run.py file. 
+
+## Acknowledgements ## 
+Big thank you to my mentor for all the help throught the project. 
+
