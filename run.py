@@ -20,15 +20,15 @@ display_intro()
 
 def validate_data():
     """
-    A function do validate the data that is put in as an answer
+    A function to validate the data that is put in as an answer
     """
     while True:
         choice = input()
         try:
-            if int(choice):
-                return choice
+            int(choice)
+            break
         except ValueError:
-            print("Value must be a integer")
+            print("Value must be an integer")
 
 
 def start_game():
@@ -72,7 +72,7 @@ def addition():
     elapsed_time = time() - start_time
     if int(choice) == num1 + num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
-    else: 
+    else:
         print("Incorrect")
 
 
@@ -116,6 +116,4 @@ def exit_game():
     print("You just left the game!")
 
 
-
 start_game()
-

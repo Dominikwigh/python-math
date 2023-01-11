@@ -1,20 +1,20 @@
 # Maths Game #
 ---
-Maths game is a python terminal game, which has been devoloped using Gitpod and deployed uon Heroku. 
+Maths game is a python terminal game, which has been devoloped using Gitpod and deployed on Heroku. 
 
-Users have the chance to practice their math. They will able to practice, "addition", "multiplication" and "subtraction". 
-When completing a challange the user gets a answer if correct/ incorrect when correct there also will be a time to show how long it took for the user to anser the question. 
+Users have the chance to practice their math. They will be able to practice, "addition", "multiplication" and "subtraction". 
+When completing a challange the user gets a answer if correct/ incorrect. 
 
 folder/image.png
 --- 
 ## Instructions on how to play ##
 
 The maths game is a simple terminal game designed to test users knowledge. 
-There is four options to choose from to play. 
-At the start of the game you are presented by a title wit the text of "Welcome to math practice. 
+There are four options to choose from to play. 
+At the start of the game you are presented by a title with the text of "Welcome to math practice". 
 Below the title is a text of "Enter your name to start the game" for the user to enter their name and then start the game. 
-on the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how log it took them to answer the question, but only if they get it right. 
-Either if its corrcet or incorrect they are provided with playing again. 
+on the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how long it took them to answer the question, but only if they get it right. 
+To play agin the user has to run the program.  
 
 --- 
 ## Project Goals ##
@@ -38,10 +38,8 @@ folder/image.png
     * Addition, multiplication, subtraction or exit game. 
 
 * Game selected 
-    * This will, after choosing a game privde the user with a problem to solve, and if correct the user sees corrcet with a time that it took the user to answer. 
-    * If the aswer is incorrect it tells the user that. 
-* Problem complete 
-    *  
+    * This will, after choosing a game provide the user with a problem to solve, and if correct the user sees corrcet with a time that it took the user to answer. 
+    * If the answer is incorrect it tells the user that. 
 
 When the run program button is clicked at the top the game will restart. 
 
@@ -74,9 +72,14 @@ The steps to deploy are as follows..
 * Click enable automatic deploy. 
 * The live version of the app can be found here.. 
 
+## Technologies Used ## 
+* Python 
+
 ## Credits ## 
-All code taken from some sort of source i have credited properly in the run.py file. 
+The code for the time was taken from [W3docs](https://www.w3docs.com/snippets/python/how-do-i-measure-elapsed-time-in-python.html/ "W3docs")
+The code for display intro function and menu list was taken from [W3resource](https://www.w3resource.com/python-exercises/math/python-math-exercise-63.php/ "W3resource")
+
 
 ## Acknowledgements ## 
-Big thank you to my mentor for all the help throught the project. 
+Big thank you to my mentor Rory Patrick for all the help throught the project. 
 
