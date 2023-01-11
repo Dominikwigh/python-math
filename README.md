@@ -55,9 +55,10 @@ folder/image.png
 
 ### Bug Testing 
 #### Knwon bugs ####
-* At first i hade a few "line to long", wich i solved thorugh shortening code. 
+* At first i hade a few "line to long", which i solved thorugh shortening code. 
+* I had a bug when answering a question, the function that i had created to validate the data wouldnt work. Beacause i hadnt declared the function in each game mode. Instead of "Choice = input ()" i changed it to  "choice = validate_data()". 
 ### Unresolved bugs
-No unresolved bugs where detected. 
+No unresolved bugs. 
 
 
 ## Deployment ##
