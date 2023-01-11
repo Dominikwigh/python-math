@@ -15,7 +15,7 @@ There are four options to choose from to play.
 At the start of the game you are presented by a title with the text of "Welcome to math practice". 
 Below the title is a text of "Enter your name to start the game" for the user to enter their name and then start the game. 
 On the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how long it took them to answer the question, but only if they get it right. 
-To play agin the user has to run the program again.  
+To play again the user has to run the program again.  
 
 --- 
 ## Project Goals ##
@@ -31,7 +31,7 @@ This project was created for Code institutes full stack development course.
 ## Features ##
 *  Start screen 
     * When the run button is clicked the user is presented with a start screen. 
-    * A title is shown and a Enter your name text, where the user have to enter a name to start the game. 
+    * A title is shown and a enter your name text, where the user have to enter a name to start the game. 
 ![start screen](images/start%20screen.png)
 
 * Choose game
@@ -50,13 +50,13 @@ This project was created for Code institutes full stack development course.
 When the run program button is clicked at the top the game will restart. 
 ## Future Features ##
 * Give the user a score. 
-* Add more quuestions. 
+* Add more questions. 
 
 ---
 ## Testing ## 
 ### Manual Testing ###
 I have manually tested the program by doing this: 
-* Passed thorugh a PEP8 linter and confirmed that there are no problems. 
+* Passed thorugh a PEP8 linter and confirmed that there are no problems. [Link to linter](https://pep8ci.herokuapp.com/#/ "link to linter") 
 * Tested answers by inputting incorrcet values(string instead of integer, numbers higher than 4).
 * Tested both on Gitpod and Heroku Terminal. 
 
@@ -98,5 +98,5 @@ The steps to deploy are as follows..
 * The template used for this project was the Code Institute python template. 
 
 ## Acknowledgements ## 
-Big thank you to my mentor Rory Patrick for all the help throught the project. 
+Big thank you to my mentor Rory Patrick for all the help throughout the project. 
 
