@@ -3,7 +3,8 @@
 Maths game is a python terminal game, which has been devoloped using Gitpod and deployed on Heroku. 
 
 Users have the chance to practice their math. They will be able to practice, "addition", "multiplication" and "subtraction". 
-When completing a challange the user gets a answer if correct/ incorrect. 
+When completing a challange the user gets a answer if correct/ incorrect.
+This game also dosen't let the user put in anything but a number in the terminal, except when asked for name. 
 
 folder/image.png
 --- 

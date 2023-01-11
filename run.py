@@ -20,7 +20,7 @@ display_intro()
 
 def validate_data():
     """
-    A function to validate the data that is put in as an answer
+    A function to validate the answer
     """
     while True:
         choice = input("> ")
