@@ -51,12 +51,13 @@ I have manually tested the program by doing this..
 * Tested both on Gitpod and Heroku Terminal. 
 
 ### Validator testing ### 
-folder/image.png
+* No errors or bugs found when passing the code through the CI Python Linter. 
+![Python linter](images/python%20linter.png)
 
 ### Bug Testing 
-#### Knwon bugs ####
+#### Known bugs ####
 * At first i hade a few "line to long", which i solved thorugh shortening code. 
-* I had a bug when answering a question, the function that i had created to validate the data wouldnt work. Beacause i hadnt declared the function in each game mode. Instead of "Choice = input ()" i changed it to  "choice = validate_data()". 
+* I had a bug when answering a question, the function that i had created to validate the data wouldnt work. Beacause i hadnt declared the function in each game mode. Instead of "Choice = input()" i changed it to  "choice = validate_data()". 
 ### Unresolved bugs
 No unresolved bugs. 
 
@@ -76,10 +77,14 @@ The steps to deploy are as follows..
 
 ## Technologies Used ## 
 * Python 
+* Github 
+* Gitpod
+* Heroku
 
 ## Credits ## 
 The code for the time was taken from [W3docs](https://www.w3docs.com/snippets/python/how-do-i-measure-elapsed-time-in-python.html/ "W3docs")
 The code for display intro function and menu list was taken from [W3resource](https://www.w3resource.com/python-exercises/math/python-math-exercise-63.php/ "W3resource")
+[W3Schools](https://www.w3schools.com/python/default.asp/ "W3Schools") used to reserch different syntaxes. 
 
 
 ## Acknowledgements ## 
