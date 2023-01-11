@@ -23,12 +23,13 @@ def validate_data():
     A function to validate the data that is put in as an answer
     """
     while True:
-        choice = input()
+        choice = input("> ")
         try:
             int(choice)
             break
         except ValueError:
             print("Value must be an integer")
+    return choice
 
 
 def start_game():
@@ -68,7 +69,7 @@ def addition():
     num2 = random.randint(5, 25)
     start_time = time()
     print(f'What is {num1} + {num2}?')
-    choice = input("> ")
+    choice = validate_data()
     elapsed_time = time() - start_time
     if int(choice) == num1 + num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
@@ -84,7 +85,7 @@ def multiplication():
     num2 = random.randint(0, 10)
     start_time = time()
     print(f'What is {num1} x {num2}?')
-    choice = input("> ")
+    choice = validate_data()
     elapsed_time = time() - start_time
     if int(choice) == num1 * num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
@@ -101,9 +102,9 @@ def subtraction():
     start_time = time()
     print(f'What is {num1} - {num2}?')
 
-    choice = input("> ")
+    choice = validate_data()
     elapsed_time = time() - start_time
-    if (choice) == num1 - num2:
+    if int(choice) == num1 - num2:
         print(f'Correct, in {elapsed_time:.2f} seconds')
     else:
         print("Incorrect!")

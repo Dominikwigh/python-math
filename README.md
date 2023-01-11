@@ -54,7 +54,8 @@ I have manually tested the program by doing this..
 folder/image.png
 
 ### Bug Testing 
-
+#### Knwon bugs ####
+* At first i hade a few "line to long", wich i solved thorugh shortening code. 
 ### Unresolved bugs
 No unresolved bugs where detected. 
 
