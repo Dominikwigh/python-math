@@ -14,8 +14,8 @@ The maths game is a simple terminal game designed to test users knowledge.
 There are four options to choose from to play. 
 At the start of the game you are presented by a title with the text of "Welcome to math practice". 
 Below the title is a text of "Enter your name to start the game" for the user to enter their name and then start the game. 
-on the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how long it took them to answer the question, but only if they get it right. 
-To play agin the user has to run the program.  
+On the next part the user is greeted and have the options to choose what to play. When the user has selected a game they then get a question and have to answer, either if its correct or incorrect the user gets the result after they have put in a answer. They are also provided with a time of how long it took them to answer the question, but only if they get it right. 
+To play agin the user has to run the program again.  
 
 --- 
 ## Project Goals ##
@@ -39,7 +39,7 @@ This project was created for Code institutes full stack development course.
     * Addition, multiplication, subtraction or exit game. 
 ![Question](images/question.png)
 * Game selected 
-    * This will, after choosing a game provide the user with a problem to solve, and if correct the user sees corrcet with a time that it took the user to answer. 
+    * This will, after choosing a game provide the user with a problem to solve, and if correct the user sees correct with the time that it took the user to answer. 
     * If the answer is incorrect it tells the user that. 
 ![Correct](images/correct.png)
 ![Incorrect](images/incorrect.png)
@@ -48,10 +48,14 @@ This project was created for Code institutes full stack development course.
 ![Error](images/error.png)
 
 When the run program button is clicked at the top the game will restart. 
+## Future Features ##
+* Give the user a score. 
+* Add more quuestions. 
 
+---
 ## Testing ## 
 ### Manual Testing ###
-I have manually tested the program by doing this.. 
+I have manually tested the program by doing this: 
 * Passed thorugh a PEP8 linter and confirmed that there are no problems. 
 * Tested answers by inputting incorrcet values(string instead of integer, numbers higher than 4).
 * Tested both on Gitpod and Heroku Terminal. 
@@ -63,7 +67,7 @@ I have manually tested the program by doing this..
 ### Bug Testing 
 #### Known bugs ####
 * At first i hade a few "line to long", which i solved thorugh shortening code. 
-* I had a bug when answering a question, the function that i had created to validate the data wouldnt work. Beacause i hadnt declared the function in each game mode. Instead of "Choice = input()" i changed it to  "choice = validate_data()". 
+* I had a bug when answering a question, the function that i had created to validate the data wouldn't work beacause i hadn't declared the function in each game mode. Instead of "Choice = input()" i changed it to  "choice = validate_data()". 
 ### Unresolved bugs
 No unresolved bugs. 
 
@@ -79,7 +83,7 @@ The steps to deploy are as follows..
 * Exit the settings and click Deploy and click Github from the deploy options. 
 * Select your repository and connect it to Heroku. 
 * Click enable automatic deploy. 
-* The live version of the app can be found here.. 
+* The live version of the app can be found here.. [Live link](https://python-game.herokuapp.com/ "Live Game link")
 
 ## Technologies Used ## 
 * Python 
@@ -88,10 +92,10 @@ The steps to deploy are as follows..
 * Heroku
 
 ## Credits ## 
-The code for the time was taken from [W3docs](https://www.w3docs.com/snippets/python/how-do-i-measure-elapsed-time-in-python.html/ "W3docs")
-The code for display intro function and menu list was taken from [W3resource](https://www.w3resource.com/python-exercises/math/python-math-exercise-63.php/ "W3resource")
-[W3Schools](https://www.w3schools.com/python/default.asp/ "W3Schools") used to reserch different syntaxes. 
-
+* The code for the time was taken from [W3docs](https://www.w3docs.com/snippets/python/how-do-i-measure-elapsed-time-in-python.html/ "W3docs")
+* The code for display intro function and menu list was taken from [W3resource](https://www.w3resource.com/python-exercises/math/python-math-exercise-63.php/ "W3resource")
+* [W3Schools](https://www.w3schools.com/python/default.asp/ "W3Schools") used to reserch different syntaxes. 
+* The template used for this project was the Code Institute python template. 
 
 ## Acknowledgements ## 
 Big thank you to my mentor Rory Patrick for all the help throught the project. 
