@@ -5,8 +5,8 @@ Maths game is a python terminal game, which has been devoloped using Gitpod and 
 Users have the chance to practice their math. They will be able to practice, "addition", "multiplication" and "subtraction". 
 When completing a challange the user gets a answer if correct/ incorrect.
 This game also dosen't let the user put in anything but a number in the terminal, except when asked for name. 
+* [Live link](https://python-game.herokuapp.com/ "Live Game link")
 
-folder/image.png
 --- 
 ## Instructions on how to play ##
 
@@ -32,15 +32,20 @@ This project was created for Code institutes full stack development course.
 *  Start screen 
     * When the run button is clicked the user is presented with a start screen. 
     * A title is shown and a Enter your name text, where the user have to enter a name to start the game. 
-folder/image.png
+![start screen](images/start%20screen.png)
 
 * Choose game
     * This next function will say "Hello 'user'", and then ask for the user to choose a game to play.
     * Addition, multiplication, subtraction or exit game. 
-
+![Question](images/question.png)
 * Game selected 
     * This will, after choosing a game provide the user with a problem to solve, and if correct the user sees corrcet with a time that it took the user to answer. 
     * If the answer is incorrect it tells the user that. 
+![Correct](images/correct.png)
+![Incorrect](images/incorrect.png)
+
+* If the user dosent put in an integer a error will be displayed.
+![Error](images/error.png)
 
 When the run program button is clicked at the top the game will restart. 
 
